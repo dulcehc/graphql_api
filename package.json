@@ -9,10 +9,15 @@
     "graphql": "^16.6.0",
     "nodemon": "^2.0.22"
   },
+  "prisma": {
+    "seed": "node src/db/seed.js"
+  },
   "scripts": {
     "dev": "nodemon .",
     "db:studio": "npx prisma studio",
-    "db:migrate:dev": "npx prisma migrate dev"
+    "db:migrate:dev": "npx prisma migrate dev",
+    "db:seed:dev": "npx prisma db seed"
+
   },
   "devDependencies": {
     "prisma": "^4.12.0"

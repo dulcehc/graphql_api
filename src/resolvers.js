@@ -1,4 +1,4 @@
-const { prisma } = require("./database.js");
+const { prisma } = require("./db/database.js");
 
 const Query = {
     getAllProducts: async (parent, args) => {
