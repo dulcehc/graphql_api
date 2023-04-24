@@ -30,11 +30,13 @@ a) Running API app from local
 DATABASE_URL="postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@localhost:${DB_PORT_EXT}/${POSTGRES_DB}?schema=public"
 ```
 
-4. Execute `yarn run db:migrate:db` to set the database.
+4. Execute `yarn run db:migrate:db` to set the database schema. After you make any changes to the schema, execute the migration again.
 
-5. Execute `yarn run dev` to start the Graphql API.
+5. Execute `yarn db:seed:dev` to populate the DB with the initial products from the JSON file.
 
-6. Open the browser http://localhost:9090 to star making queries and mutations.
+6. Execute `yarn run dev` to start the Graphql API.
+
+7. Open the browser http://localhost:9090 to star making queries and mutations.
 
 b) API deployment
 
