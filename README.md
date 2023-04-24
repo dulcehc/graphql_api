@@ -54,6 +54,8 @@ DATABASE_URL="postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@localhost:${DB_
 
 Once you open the graphical interface:
 
+<img width="1222" alt="Screenshot 2023-04-23 at 19 52 34" src="https://user-images.githubusercontent.com/19391835/233881876-a3a06d30-4dc8-4cd1-9b72-51ed1d05541b.png">
+
 a) Find product by id
 
 ```
@@ -85,3 +87,5 @@ mutation Mutation($code: String!, $price: Float) {
 ```
 
 If you want to see the database, you can execute locally `yarn run dev:studio`.
+
+<img width="1411" alt="Screenshot 2023-04-23 at 19 50 23" src="https://user-images.githubusercontent.com/19391835/233881668-8f1896b1-f50a-4526-8e7b-85a2554f3c35.png">
