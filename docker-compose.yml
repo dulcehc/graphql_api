@@ -10,7 +10,7 @@ services:
     volumes:
       - db:/var/lib/postgresql/data
     ports:
-      - 5433:5432
+      - ${EXTERNAL_PORT}:${DB_PORT}
   api:
     build:
       context: .
