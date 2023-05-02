@@ -16,7 +16,8 @@
     "dev": "nodemon .",
     "db:studio": "npx prisma studio",
     "db:migrate:dev": "npx prisma migrate dev",
-    "db:seed:dev": "npx prisma db seed"
+    "db:seed:dev": "npx prisma db seed",
+    "start:migrate:prod": "yarn run db:migrate:dev && yarn run dev"
 
   },
   "devDependencies": {

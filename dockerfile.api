@@ -7,4 +7,4 @@ RUN yarn prisma generate
 
 EXPOSE $API_PORT
 
-CMD [ "yarn",  "dev"]
+CMD [ "yarn", "run", "start:migrate:prod"]
